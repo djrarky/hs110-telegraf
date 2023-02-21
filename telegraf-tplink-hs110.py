@@ -14,7 +14,7 @@ async def get_power_data(plugs):
 
         # Add realtime data
         realtime_data = ",".join([f"{k}={v}" for k, v in plug_data.items()])
-        output.append(f"power,plug_name={plug_name} {realtime_data}")
+        output.append(f"power,plugname={plug_name} {realtime_data}")
 
         # Add daily data
         for day, total in plug_monthly_data.items():
@@ -24,11 +24,11 @@ async def get_power_data(plugs):
                 days_difference = (datetime.today() - datetime(datetime.today().year, datetime.today().month, day)).days
                 day_str = f"-{days_difference}"
 
-            output.append(f"power,plug_name={plug_name},daily day={day_str},total={total}")
+            output.append(f"power,plugname={plug_name},day={day_str} total={total}")
 
         # Add total monthly data
         current_month = datetime.today().month
-        output.append(f"power,plug_name={plug_name},monthly month=0,total={plug_total_monthly_data[current_month]}")
+        output.append(f"power,plugname={plug_name},month=0 total={plug_total_monthly_data[current_month]}")
 
     print("\n".join(output))
 
