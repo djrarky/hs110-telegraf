@@ -2,8 +2,11 @@
 
 For a full compatibility list, see the API maintainers list here: https://github.com/python-kasa/python-kasa#plugs
 
-> This is a first draft
+> This is a first draft. Monthly logic yet to be built. 
 
+This plugin supports as many devices as you wish. Simpy follow the format:
+
+`telegraf-tplink-hs110.py plugName1 IPAddress1 plugName2 IPAddress2 plugName3 IPAddress 3 etc`
 ## API Installation
 
 ### PIP (pip3 on some distros)
