@@ -7,7 +7,10 @@ For a full compatibility list, see the API maintainers list here: https://github
 This plugin supports as many devices as you wish. Simpy follow the format:
 
 `telegraf-tplink-hs110.py plugName1 IPAddress1 plugName2 IPAddress2 plugName3 IPAddress 3 etc`
-## API Installation
+## Docker Configuration
+See here: https://github.com/djrarky/telegraf-python3#configure
+
+## Native API Installation
 
 ### PIP (pip3 on some distros)
 `pip install -r requirements.txt`
