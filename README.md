@@ -18,7 +18,7 @@ This plugin supports as many devices as you wish. Simpy follow the format:
 ```
 [[inputs.exec]]
   ## Commands array
-  commands = ["python3 location/telegraf-tplink-hs110.py plugName1 IPAddress1 plugName2 IPAddress2"]
+  commands = ["python3 location/telegraf-tplink-hs110.py 'plugName1' 'IPAddress1' 'plugName2' 'IPAddress2'"]
 
   ## measurement name suffix (for separating different commands)
   name_suffix = "_mycollector"
